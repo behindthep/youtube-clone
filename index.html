@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>YouTubeClone</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="styles/general.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/video.css" />
+		<link rel="stylesheet" href="styles/sidebar.css" />
+		<link rel="stylesheet" href="styles/footer.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="left-section">
+				<img class="hamburger-menu" src="img/icons/hamburger-menu.svg" alt="" />
+				<div class="youtube-logo-container">
+					<div class="youtube-language">RU</div>
+					<img class="youtube-logo" src="img/icons/youtube-logo.svg" alt="" />
+				</div>
+			</div>
+
+			<div class="middle-section">
+				<input class="search-bar" type="text" placeholder="Введите запрос" />
+				<button class="search-button">
+					<img class="search-icon" src="img/icons/search.svg" alt="" />
+					<div class="tooltip">Search</div>
+				</button>
+				<button class="voice-search-button">
+					<img
+						class="voice-search-icon"
+						src="img/icons/voice-search-icon.svg"
+						alt=""
+					/>
+					<div class="tooltip">Search with your voice</div>
+				</button>
+			</div>
+
+			<div class="right-section">
+				<div class="upload-icon-container">
+					<img class="upload-icon" src="img/icons/upload.svg" alt="" />
+					<div class="tooltip">Create</div>
+				</div>
+
+				<div class="youtube-apps-icon-container">
+					<img
+						class="youtube-apps-icon"
+						src="img/icons/youtube-apps.svg"
+						alt=""
+					/>
+					<div class="tooltip">YouTube apps</div>
+				</div>
+
+				<div class="notifications-icon-container">
+					<img
+						class="notifications-icon"
+						src="img/icons/notifications.svg"
+						alt=""
+					/>
+					<div class="notifications-count">3</div>
+					<div class="tooltip">Notifications</div>
+				</div>
+
+				<img class="current-user-picture" src="img/profile.png" alt="" />
+			</div>
+		</header>
+
+		<nav class="sidebar">
+			<div class="sidebar-link">
+				<img src="img/icons/home.svg" alt="" />
+				<div class="">Home</div>
+			</div>
+
+			<div class="sidebar-link">
+				<img src="img/icons/explore.svg" alt="" />
+				<div class="">Explore</div>
+			</div>
+
+			<div class="sidebar-link">
+				<img src="img/icons/subscriptions.svg" alt="" />
+				<div class="">Subscriptions</div>
+			</div>
+
+			<div class="sidebar-link">
+				<img src="img/icons/originals.svg" alt="" />
+				<div class="">originals</div>
+			</div>
+
+			<div class="sidebar-link">
+				<img src="img/icons/youtube-music.svg" alt="" />
+				<div class="">YouTube Music</div>
+			</div>
+
+			<div class="sidebar-link">
+				<img src="img/icons/library.svg" alt="" />
+				<div class="">Library</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="top-section">
+				<div class="video-tags selected-rec">
+					<div>Все</div>
+				</div>
+
+				<div class="video-tags">Видеоигры</div>
+
+				<div class="video-tags">Музыка</div>
+
+				<div class="video-tags">Экшен и приключения</div>
+
+				<div class="video-tags">Туристические направления</div>
+
+				<div class="video-tags">Недавно опубликованные</div>
+
+				<div class="video-tags">Новое для вас</div>
+			</div>
+
+			<section class="video-grid">
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview1.jpg" alt="preview" />
+						<div class="video-time">16:21</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">
+								Уже 3 года как я один строю дом из бревен
+							</p>
+							<p class="video-author">Edna Mod</p>
+							<p class="video-stats">10 млн. просмотров • 20 лет назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview2.jpeg" alt="preview" />
+						<div class="video-time">10:25</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">600 Days, Can I Talk to People?</p>
+							<p class="video-author">The minons</p>
+							<p class="video-stats">96 просмотров • 13 минут назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview3.png" alt="preview" />
+						<div class="video-release">Новинка</div>
+						<div class="video-time">20:31</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">
+								𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 80's Tokyo Lofi Hiphop / lo-fi hiphop mix ( Study )
+							</p>
+							<p class="video-author">Erno Yeager</p>
+							<p class="video-stats">139 тыс. просмотров • 14 часов назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview4.webp" alt="preview" />
+						<div class="video-time">20:02</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">Points Blanks</p>
+							<p class="video-author">Walker123</p>
+							<p class="video-stats">3,3 млн просмотров • 59 минут назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview1.jpg" alt="preview" />
+						<div class="video-time">16:21</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">
+								Уже 3 года как я один строю дом из бревен
+							</p>
+							<p class="video-author">Edna Mod</p>
+							<p class="video-stats">10 млн. просмотров • 20 лет назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview2.jpeg" alt="preview" />
+						<div class="video-time">10:25</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">600 Days, Can I Talk to People?</p>
+							<p class="video-author">The minons</p>
+							<p class="video-stats">96 просмотров • 13 минут назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview3.png" alt="preview" />
+						<div class="video-release">Новинка</div>
+						<div class="video-time">20:31</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">
+								𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 80's Tokyo Lofi Hiphop / lo-fi hiphop mix ( Study )
+							</p>
+							<p class="video-author">Erno Yeager</p>
+							<p class="video-stats">139 тыс. просмотров • 14 часов назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview4.webp" alt="preview" />
+						<div class="video-time">20:02</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">Points Blanks</p>
+							<p class="video-author">Walker123</p>
+							<p class="video-stats">3,3 млн просмотров • 59 минут назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview1.jpg" alt="preview" />
+						<div class="video-time">16:21</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">
+								Уже 3 года как я один строю дом из бревен
+							</p>
+							<p class="video-author">Edna Mod</p>
+							<p class="video-stats">10 млн. просмотров • 20 лет назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview2.jpeg" alt="preview" />
+						<div class="video-time">10:25</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">600 Days, Can I Talk to People?</p>
+							<p class="video-author">The minons</p>
+							<p class="video-stats">96 просмотров • 13 минут назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview3.png" alt="preview" />
+						<div class="video-release">Новинка</div>
+						<div class="video-time">20:31</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">
+								𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 80's Tokyo Lofi Hiphop / lo-fi hiphop mix ( Study )
+							</p>
+							<p class="video-author">Erno Yeager</p>
+							<p class="video-stats">139 тыс. просмотров • 14 часов назад</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="video-preview">
+					<div class="thumbnail-row">
+						<img class="thumbnail" src="img/preview4.webp" alt="preview" />
+						<div class="video-time">20:02</div>
+					</div>
+
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img
+								class="profile-picture"
+								src="img/profile.png"
+								alt="news-author"
+							/>
+						</div>
+
+						<div class="video-info">
+							<p class="video-title">Points Blanks</p>
+							<p class="video-author">Walker123</p>
+							<p class="video-stats">3,3 млн просмотров • 59 минут назад</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
